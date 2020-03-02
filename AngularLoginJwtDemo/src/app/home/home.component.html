@@ -1,0 +1,14 @@
+<nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+    <a class="navbar-brand text-white"><strong>Coffee And Bun</strong> - <small>JWT Auth System</small></a>
+    <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
+  </nav>
+
+  <div class="card m-5" style="width: 18rem;" *ngIf="userDetails">
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Username : </strong>{{ userDetails.userName }}</li>
+      <li class="list-group-item"><strong>First Name : </strong>{{ userDetails.firstName }}</li>
+      <li class="list-group-item"><strong>Last Name : </strong>{{ userDetails.lastName }}</li>
+      <li class="list-group-item"><strong>Email : </strong>{{ userDetails.email }}</li>
+    </ul>
+  </div>
